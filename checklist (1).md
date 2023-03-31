@@ -1,4 +1,4 @@
-**Package name: [e.g. CouchDB]**
+**Package name: [SCALA 3.2.2]**
 
 **Currency Checklist:**
 
