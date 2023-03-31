@@ -18,8 +18,8 @@ Issues info:| <br>1. Any issue created with community (GitHub, JIRA, Bugzilla et
 Internal Deliverables: | 1.	Created Test reports (Table format)?Use test result template<br>2.	Is Zenhub issue updated with all UpToDate info including informal community communications<br>3.	List down detailed Steps followed to verify the package. Give reference link as well. Also Attach a proof of verification on the ZenHub issue
 External Deliverables: | 1.	Build Instructions <br>&nbsp;&nbsp;&nbsp;1.1	Is BI updated?<br>&nbsp;&nbsp;&nbsp;1.2	List all the changes done with respect to published version<br>2.	Scripts <br>&nbsp;&nbsp;&nbsp;2.1	Is Script updated?<br>&nbsp;&nbsp;&nbsp;2.2	List all the changes done with respect to published version<br>3.	Dockerfile  <br>&nbsp;&nbsp;&nbsp;3.1	Is Dockerfile updated?<br>&nbsp;&nbsp;&nbsp;3.2	List all the changes done with respect to published version 
 External table changes required? Add details about external table changes required (If any) (Check links, distro etc.) |
-Actual efforts (In   hours) |  
-Calendar   Time (actual Start and End Date in yyyy/mm/dd) |  
+Actual efforts (In   hours) | 22hrs 
+Calendar   Time (actual Start and End Date in yyyy/mm/dd) |  2023/03/24 - 2023/03/28
 
 * Java Variants on Z: 
   * **Java 8 (LTS)**: OpenJDK8, IBM Semeru Runtime Version 8.
