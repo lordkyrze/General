@@ -1,0 +1,31 @@
+**Package name: [e.g. CouchDB]**
+
+**Currency Checklist:**
+
+Tasks | Details 
+-- | --
+Check the Latest stable version |  
+Provide list of supported distros mentioned by community. Share link for reference.<br><br>Add support for following   Distros:<br>  RHEL 7.8, RHEL 7.9, RHEL 8.4, RHEL 8.6, RHEL 8.7, RHEL 9.0, RHEL 9.1, SLES12 SP5, SLES15 SP4, Ubuntu 18.04(LTS), Ubuntu 20.04(LTS), Ubuntu 22.04(LTS),  Ubuntu 22.10<br> Supported distro list should match   what community claims. If any community claimed distro is not worked on, give   appropriate reasons.<br><br> (Note: Format community claim statement in italics if applicable) |  
+Provide list of supported runtimes mentioned by community. Share link for reference. <br> (Note: Format community claim statement in italics if applicable) <br> Provide list of verified runtimes as mentioned by community. <br>Eg: Go/Java/Gcc etc <br>(Refer Java guidelines below, for more info)  <br>If any community claimed runtimes are not worked on, give   appropriate reasons.  | 
+Package   available in distribution? If yes, list distos along with versions available |  
+Languages used – List all the languages used in Source. <br><br>Update the Package Status excel sheet <br>https://ibm.ent.box.com/file/910316005555 |   
+CI/CD info: <br> Community using any CI/CD tool? Yes/No<br>If yes, answer questions in the next column for each CI/CD tools <br> |  Yes (CI link) or No public/private CI/CD info. found  <br>1. Is Z part of the CI? Yes/No <br>&nbsp;&nbsp;&nbsp;&nbsp;If yes, <br>&nbsp;&nbsp;&nbsp;&nbsp;1.1. working properly & build succ? <br> 2.  List archs being built<br>3. Is the package cross compiled? <br>4. Is this CI responsible for releasing any build artifact (e.g., binary/docker image/operator)  <br>5. Is this CI for build only? <br>6. Is testing part of the CI (What kind of testing. E.g. unit test, integration test) <br>7.   Is CI part of PR checks or PR merge commits? <br> 8. If Z is not already part of CI, then look for chances to add Z support, share details like how to enable, etc, discussion is needed before we decide what to do. 
+Binary info:<br>Are Binaries (in any format) available? If yes, provide details:  |  1.	List all architectures (including no-arch/no-mention) for which binaries are available and share link to download.<br>2. Provide details on how it is built e.g. cross vs native <br>3.	Tools being used to create binary <br>4.	CI responsible for releasing the binary<br>5.	Is emulator used?<br>6.	Verify/test binaries and share results. <br>7.	If Binary is not available for Z then look for chances to add Z support, share details like how to enable, etc, discussion is needed before we decide what to do.
+Docker Image info:<br> Dockerfile/images available externally for Intel?If Yes, provide details: |  1.	Intel Dockerfile link: <br>2. s390x Dockerfile link (Maintained by us / Community):<br>&nbsp;&nbsp;&nbsp;2.1 If maintained by us,      Dockerfile should be provided and should as close to Intel as possible. Provide difference with Intel if any and why<br>&nbsp;&nbsp;&nbsp;2.2	If maintained by us,      mention Intel and s390x docker image sizes. Provide difference with Intel if any and why <br>3.	Docker image link (for s390x and other platforms like Intel, amd, ppc64 etc): <br>(Search as many keywords as u can think of – e.g.  dockerhub, google, gcloud , Rhel registry etc)<br>4.	Mention the CI responsible for building   and publishing docker image.<br>5.	Is emulator used?<br>6.	Mention tools used to build the image.<br>7.	If docker image is not available for Z then look for chances to add Z support, share details like how to enable, etc, discussion is needed before we decide what to do.
+Operator info:<br> Are Operators available?   If yes, provide details:| 1. Which arch and where to find it (link should be provided).  <br>2.   Generated from their CI/CD? 
+PR info:<br> Are there any code changes needed for this release?If Yes, If yes, list them all in the next column and answer question for each. | 1.	Should the code changes be PRed? If yes provide PR link. If Not PRed, provide reasons on why not. <br> 2.	Check if there are existing open PR’s and if it's still valid for this release 
+Issues info:| <br>1. Any issue created with community (GitHub, JIRA, Bugzilla etc)?If Yes, provide issue link.<br>2.	Check if there are existing open issues and if it's still valid for this release. For any outstanding issue provide latest updates and issue table should be updated accordingly. 
+Internal Deliverables: | 1.	Created Test reports (Table format)?Use test result template<br>2.	Is Zenhub issue updated with all UpToDate info including informal community communications<br>3.	List down detailed Steps followed to verify the package. Give reference link as well. Also Attach a proof of verification on the ZenHub issue
+External Deliverables: | 1.	Build Instructions <br>&nbsp;&nbsp;&nbsp;1.1	Is BI updated?<br>&nbsp;&nbsp;&nbsp;1.2	List all the changes done with respect to published version<br>2.	Scripts <br>&nbsp;&nbsp;&nbsp;2.1	Is Script updated?<br>&nbsp;&nbsp;&nbsp;2.2	List all the changes done with respect to published version<br>3.	Dockerfile  <br>&nbsp;&nbsp;&nbsp;3.1	Is Dockerfile updated?<br>&nbsp;&nbsp;&nbsp;3.2	List all the changes done with respect to published version 
+External table changes required? Add details about external table changes required (If any) (Check links, distro etc.) |
+Actual efforts (In   hours) |  
+Calendar   Time (actual Start and End Date in yyyy/mm/dd) |  
+
+* Java Variants on Z: 
+  * **Java 8 (LTS)**: OpenJDK8, IBM Semeru Runtime Version 8.
+  * **Java 11 (LTS)**: OpenJDK11, Eclipse Adoptium Temurin Runtime Version 11, [IBM Semeru Runtime Version 11 -> Not recommended for all packages. Discuss with the lead before trying out this variant].
+  * **Java 17 (LTS)**: OpenJDK17, Eclipse Adoptium Temurin Runtime Version 17, [IBM Semeru Runtime Version 17 -> Not recommended for all packages. Discuss with the lead before trying out this variant]. 
+ 
+**Guidelines:** 
+* All Java versions mentioned by community should be tested
+* If community does not mention any specific version of Java then use Java 11. Use Java 8 if Java 11 does not work.
